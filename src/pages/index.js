@@ -1,9 +1,12 @@
 import * as React from "react";
+import "swiper/css";
+import "../styles/theme.css";
+import Navbar from "../components/navbar";
 
 const IndexPage = () => {
   return (
     <main>
-      <h1>Page 1</h1>
+      <Navbar />
     </main>
   );
 };

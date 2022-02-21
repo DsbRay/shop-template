@@ -1,0 +1,25 @@
+@import "./reset.css";
+@import "./fonts/ptsans/stylesheet.css";
+@import "./fonts/suezone/stylesheet.css";
+:root {
+    /* base colours */
+    --black: #000;
+    --white: #fff;
+    --gray: #828282;
+    /* primary colours */
+    --gallery: #EAEAEA;
+    --azureRadiance: #00A2FF;
+    --pottersClay: #91613D;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+    font-family: "pt_sansregular";
+}
