@@ -23,3 +23,8 @@ a,
 span {
     font-family: "pt_sansregular";
 }
+
+p,
+a {
+    font-size: 17px;
+}

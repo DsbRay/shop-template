@@ -49,7 +49,7 @@ const Navbar = () => {
     return NAV_LINKS.map((link, i) => {
       return (
         <React.Fragment key={`link-${i}`}>
-          <Link to={link.url}>{link.label}</Link>
+          <Link to={link.url}> {link.label} </Link>{" "}
         </React.Fragment>
       );
     });
@@ -58,7 +58,7 @@ const Navbar = () => {
     return ICON_LINKS.map((icon, i) => {
       return (
         <React.Fragment key={`link-${i}`}>
-          <img src={icon.icon} alt={icon.name} />
+          <img src={icon.icon} alt={icon.name} />{" "}
         </React.Fragment>
       );
     });
@@ -66,14 +66,14 @@ const Navbar = () => {
   return (
     <Container>
       <img src={logo} alt="logo" />
-      <div className="links flex">{renderNavLinks()}</div>
-      <div className="icon flex">{renderIconList()}</div>
+      <div className="links flex"> {renderNavLinks()} </div>{" "}
+      <div className="icon flex"> {renderIconList()} </div>{" "}
       <div className="user">
-        <Link to="/">sign up</Link>
+        <Link to="/"> sign up </Link>{" "}
         <Link to="/" className="login">
-          login
-        </Link>
-      </div>
+          login{" "}
+        </Link>{" "}
+      </div>{" "}
     </Container>
   );
 };
