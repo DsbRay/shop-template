@@ -1,13 +1,22 @@
 import React from "react";
 import styled from "styled-components";
+import advertBanner from "../../images/advert-banner.png";
 
 const AddBanner = () => {
-  return (
-    <Container>
-      <h1> test </h1>
-    </Container>
-  );
+  return <Banner src={advertBanner} alt="advert-banner" />;
 };
 
-const Container = styled.div``;
+const Banner = styled.img`
+  cursor: pointer;
+  display: block;
+  margin: 40px auto;
+  width: 100%;
+  height: 100%;
+  max-width: 307.2px;
+  max-height: 616px;
+  transition: opacity 0.25s ease;
+  &:hover {
+    opacity: 0.9;
+  }
+`;
 export default AddBanner;
