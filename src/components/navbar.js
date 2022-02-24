@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import MobileNav from "./MobileNav";
 import styled from "styled-components";
 import logo from "../images/logo.svg";
 import giftIcon from "../images/icons/gift.svg";
@@ -49,7 +50,7 @@ const Navbar = () => {
     return NAV_LINKS.map((link, i) => {
       return (
         <React.Fragment key={`link-${i}`}>
-          <Link to={link.url}> {link.label} </Link>{" "}
+          <Link to={link.url}> {link.label} </Link>
         </React.Fragment>
       );
     });
@@ -58,7 +59,7 @@ const Navbar = () => {
     return ICON_LINKS.map((icon, i) => {
       return (
         <React.Fragment key={`link-${i}`}>
-          <img src={icon.icon} alt={icon.name} />{" "}
+          <img src={icon.icon} alt={icon.name} />
         </React.Fragment>
       );
     });
@@ -66,20 +67,21 @@ const Navbar = () => {
   return (
     <Container>
       <img src={logo} alt="logo" />
-      <div className="links flex"> {renderNavLinks()} </div>{" "}
-      <div className="icon flex"> {renderIconList()} </div>{" "}
+      <div className="links flex"> {renderNavLinks()} </div>
+      <div className="icon flex"> {renderIconList()} </div>
       <div className="user">
-        <Link to="/"> sign up </Link>{" "}
+        <Link to="/"> sign up </Link>
         <Link to="/" className="login">
-          login{" "}
-        </Link>{" "}
-      </div>{" "}
+          login
+        </Link>
+      </div>
+      <MobileNav links={NAV_LINKS} />
     </Container>
   );
 };
 
 const Container = styled.div`
-  background-color: lightcyan;
+  background-color: var(--white);
   padding: 25px 45px;
   display: flex;
   align-items: center;
@@ -89,7 +91,7 @@ const Container = styled.div`
     font-family: "suez_oneregular";
   }
   .flex {
-    display: flex;
+    display: none;
     gap: 30px;
     &.links {
       a {
@@ -111,7 +113,7 @@ const Container = styled.div`
     }
   }
   .user {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 30px;
     a {
@@ -126,6 +128,13 @@ const Container = styled.div`
         border: 3px solid var(--azureRadiance);
         border-radius: 4px;
       }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .flex,
+    .user {
+      display: flex;
     }
   }
 `;

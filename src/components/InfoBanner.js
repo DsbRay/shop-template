@@ -38,6 +38,7 @@ const Container = styled.div`
     border: 3px solid var(--azureRadiance);
     &:hover {
       opacity: 0.7;
+      color: var(--azureRadiance);
     }
   }
   @media (min-width: 1024px) {
