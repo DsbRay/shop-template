@@ -7,7 +7,7 @@ const ChipFilter = () => {
   const [state, setState] = useState([]);
   return (
     <Container>
-      <label>BRANDS</label>
+      <p>BRANDS</p>
       <div className="input-group">
         <InputTags values={state} onTags={(value) => setState(value.values)} />
       </div>
@@ -17,7 +17,7 @@ const ChipFilter = () => {
 
 const Container = styled.div`
   margin: 20px 30px;
-  label {
+  p {
     color: var(--gray);
   }
   .badge {

@@ -5,7 +5,8 @@ import AddBanner from "./AddBanner";
 import SignUp from "./SignUp";
 import PromotionBanner from "./PromotionBanner";
 import PageTrail from "./PageTrail";
-
+import Product from "./Product";
+import Boots from "./Boots";
 const Shop = () => {
   return (
     <Container>
@@ -17,6 +18,8 @@ const Shop = () => {
       <div>
         <PromotionBanner />
         <PageTrail />
+        <Product />
+        <Boots />
       </div>
     </Container>
   );

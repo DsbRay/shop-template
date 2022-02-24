@@ -3,6 +3,7 @@ import "swiper/css";
 import Navbar from "../components/navbar";
 import InfoBanner from "../components/InfoBanner";
 import Shop from "../components/shop";
+import Footer from "../components/footer";
 import "../styles/theme.css";
 const IndexPage = () => {
   return (
@@ -10,6 +11,7 @@ const IndexPage = () => {
       <Navbar />
       <InfoBanner />
       <Shop />
+      <Footer />
     </main>
   );
 };

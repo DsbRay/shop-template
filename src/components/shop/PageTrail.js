@@ -6,9 +6,9 @@ const PageTrail = () => {
   return (
     <Container>
       <p>Home</p>
-      <img src={chevronRight} />
+      <img src={chevronRight} alt="chevron" />
       <p>Boots</p>
-      <img src={chevronRight} />
+      <img src={chevronRight} alt="chevron" />
       <p>Dylan Hiker Boots</p>
     </Container>
   );
