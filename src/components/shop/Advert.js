@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import advertBanner from "../../images/advert-banner.png";
 
-const AddBanner = () => {
+const Advert = () => {
   return <Banner src={advertBanner} alt="advert-banner" />;
 };
 
@@ -19,4 +19,4 @@ const Banner = styled.img`
     opacity: 0.9;
   }
 `;
-export default AddBanner;
+export default Advert;

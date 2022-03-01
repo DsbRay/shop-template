@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Search from "./Search";
-import AddBanner from "./AddBanner";
+import Advert from "./Advert";
 import SignUp from "./SignUp";
 import PromotionBanner from "./PromotionBanner";
 import PageTrail from "./PageTrail";
@@ -12,7 +12,7 @@ const Shop = () => {
     <Container>
       <div>
         <Search />
-        <AddBanner />
+        <Advert />
         <SignUp />
       </div>
       <div>
