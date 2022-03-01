@@ -31,6 +31,6 @@
         "react-bootstrap-tagsinput": "^0.5.0",
         "react-dom": "^17.0.1",
         "styled-components": "^5.3.3",
-        "swiper": "^6.1.1"
+        "swiper": "^8.0.6"
     }
 }
